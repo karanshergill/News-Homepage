@@ -10,6 +10,9 @@ export default {
         'color-grayish-blue': 'hsl(233, 8%, 79%)',
         'color-dark-grayish-blue': 'hsl(236, 13%, 42%)',
         'color-very-dark-blue': 'hsl(240, 100%, 5%)'
+      },
+      fontFamily: {
+        'Inter': ['Inter']
       }
     },
   },
