@@ -12,7 +12,6 @@ export const Navigation = () => {
             <img src="/src/assets/images/logo.svg" className="h-8 w-auto" alt="Logo" />
 
             <button className="block desktop:hidden" onClick={toggleMobileMenu}>
-                <img src="/src/assets/images/icon-menu.svg" alt="Open Menu" />
                 {!isMobileMenuOpen ? (
                     <img src="/src/assets/images/icon-menu.svg" alt="Menu Open" />
                 ) : (
@@ -32,7 +31,7 @@ export const Navigation = () => {
 
             {isMobileMenuOpen && (
                 <div className="fixed top-0 right-0 w-3/4 h-full bg-white z-50">
-                    <div className="flex items-center justify-end p-6">
+                    <div className="flex items-center justify-end p-8">
                         <button
                             onClick={toggleMobileMenu}
                             aria-label="Close Mobile Menu"
