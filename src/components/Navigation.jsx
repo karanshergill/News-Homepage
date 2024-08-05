@@ -1,6 +1,10 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion";
 
+import Logo from '../assets/logo.svg'
+import menuOpenIcon from "../assets/icon-menu.svg";
+import menuCloseIcon from "../assets/icon-menu-close.svg";
+
 const navItems = ['Home', 'New', 'Popular', 'Trending', 'Categories'];
 
 export const Navigation = () => {
@@ -12,11 +16,11 @@ export const Navigation = () => {
 
     return (
         <nav className='relative flex w-full items-center justify-between'>
-            <img src="/src/assets/images/logo.svg" className="h-8 w-auto" alt="Logo" />
+            <img src={Logo} className="h-8 w-auto" alt="Logo" />
 
             <button className="block desktop:hidden" onClick={toggleMobileMenu}>
                 <motion.img
-                    src="/src/assets/images/icon-menu.svg"
+                    src={menuOpenIcon}
                     alt="Menu Open"
                     initial={{ rotate: 0 }}
                     animate={{ rotate: isMobileMenuOpen ? 90 : 0 }}
@@ -50,7 +54,7 @@ export const Navigation = () => {
                                 aria-label="Close Mobile Menu"
                             >
                                 <motion.img
-                                    src="/src/assets/images/icon-menu-close.svg"
+                                    src={menuCloseIcon}
                                     alt="Close Icon"
                                     className="w-6 h-6"
                                     initial={{ rotate: 0 }}
