@@ -1,8 +1,6 @@
-import React from 'react'
-
 export const New = () => {
     return (
-        <div className='flex flex-col p-6 gap-2 bg-color-very-dark-blue'>
+        <div className='flex flex-col p-8 gap-2 bg-color-very-dark-blue'>
             <h1 className='text-4xl font-semibold text-color-soft-orange'>New</h1>
 
             <div className='flex flex-col gap-2 border-b-2 border-color-dark-grayish-blue my-4 pb-6'>

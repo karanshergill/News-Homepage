@@ -3,6 +3,10 @@ export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        'mobile': '375px',
+        'desktop': '1440px'
+      },
       colors: {
         'color-soft-orange': 'hsl(35, 77%, 62%)',
         'color-soft-red': 'hsl(5, 85%, 63%)',
@@ -13,6 +17,9 @@ export default {
       },
       fontFamily: {
         'Inter': ['Inter']
+      },
+      fontSize: {
+        default: ['14px']
       }
     },
   },
