@@ -10,8 +10,8 @@ export const Home = () => {
       <div className='grid desktop:grid-cols-3 gap-8 mt-6 md:mt-0 desktop:mt-0'>
         <div className='md:col-span-2 desktop:col-span-2'>
           <picture>
-            <source srcSet="/src/assets/image-web-3-desktop.jpg" media="(min-width: 1440px)" />
-            <img src="../assets/images/image-web-3-mobile.jpg" alt="Web 3" className="w-full h-auto" />
+            <source srcSet="../assets/image-web-3-desktop.jpg" media="(min-width: 1440px)" />
+            <img src="../assets/image-web-3-mobile.jpg" alt="Web 3" className="w-full h-auto" />
           </picture>
           <Hero />
         </div>
